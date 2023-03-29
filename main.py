@@ -4,6 +4,7 @@ import re
 import json
 import logging
 import itertools
+from tqdm import tqdm
 
 
 start_time = time.time()

@@ -3,14 +3,14 @@
 This is a Python script that scrapes job postings from Cermati website and saves them as a JSON file.
 
 Installation
-To run this script, you need to have Python 3 and the following libraries installed:
+To run this script, you need to have Python 3 and libraries installed:
 
-requests
+
 
 You can install them using pip:
 
 ```Python
-pip install requests
+pip install -r requirements.txt
 ```
 Usage
 To use this script, you need to clone this repository or download the main.py file. Then, you can run the script from the command line:
@@ -37,7 +37,17 @@ The data.json file has the following structure as asked in assignement:
 }
 ```
 
+===
 
+[]:Used requests.Session() to maintain a persistent connection with the website and minimize the number of HTTP requests sent.
+
+[]:Used re.compile() to compile the regex pattern for extracting job URLs, which is more efficient than compiling the pattern every time it is used.
+
+[]:Used a copy() method to copy dictionaries in the group-by loop to avoid modifying the original dictionaries and causing unintended side effects.
+
+[]:Added a timer to measure the runtime of the program and a counter timer to show the execution progress of the program in seconds.
+
+===
 
 #Contact
 If you have any questions or feedback, please contact me You have my details.
