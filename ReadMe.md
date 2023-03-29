@@ -1,4 +1,4 @@
-#Cermati Assignment
+# Cermati Assignment
 ---
 This is a Python script that scrapes job postings from Cermati website and saves them as a JSON file.
 
