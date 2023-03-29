@@ -38,10 +38,11 @@ The data.json file has the following structure as asked in assignement:
 ```
 
 ---
->Used requests.Session() to maintain a persistent connection with the website and minimize the number of HTTP requests sent.  
->Used re.compile() to compile the regex pattern for extracting job URLs.
->Used a copy() method to copy dictionaries in the group-by loop to avoid modifying the original dictionaries and causing unintended side effect.
->Added a timer to measure the runtime of the program and a counter timer to show the execution progress of the program in seconds.
+>Used requests.Session() to maintain a persistent connection with the website and minimize the number of HTTP requests sent.>
+>Used re.compile() to compile the regex pattern for extracting job URLs.>
+>Used a copy() method to copy dictionaries in the group-by loop to avoid modifying the original dictionaries and causing unintended side effect.>
+>Added a timer to measure the runtime of the program and a counter timer to show the execution progress of the program in seconds.>
+>Added a progress bar to show the execution progress of the program in percentage.>
 ---
 
 ## Contact

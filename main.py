@@ -18,7 +18,7 @@ with requests.Session() as session:
         f.write(html)
     pattern = re.compile(r'\bref":"(https?://[^"]+)')
     job_urls = pattern.findall(html)
-    for job_url in job_urls:
+    for job_url in tqdm(job_urls, desc='Scraping jobs', unit='job'):
         try:
             json_response = session.get(job_url)
             json_response.raise_for_status()
